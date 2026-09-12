@@ -39,7 +39,8 @@ from io import BytesIO
 try:
     from server_config import NEX_CONFIG, NEX_SETTINGS
 except ModuleNotFoundError as e:
-    print('Rename "server_config.example.py" to "server_config.py" and modify the configuration options to fit with your env.')
+    #print('Rename "server_config.example.py" to "server_config.py" and modify the configuration options to fit with your env.')
+    logging.exception("Failed to import server_config")
     exit(-1)
 
 
