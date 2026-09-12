@@ -1,5 +1,8 @@
 from nintendo.nex import settings
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 GAME_SERVER_ID = 0x1010EB00
 ACCESS_KEY = "25dbf96a"
