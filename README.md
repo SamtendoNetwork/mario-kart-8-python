@@ -1,15 +1,11 @@
 # Mario Kart 8 NEX server (The python variant)
 
 This is the currently hosted version of Mario Kart 8 on Samtendo Network.
-[The original repo](https://github.com/Newtendo-Network/nex_mario_kart_8) has stopped development, this fork exists to continue provide maintenance fixes.
-
-> [!IMPORTANT]
-> This server is in **maintenance mode**, no new features will be added. All new efforts should go to [the new repo](https://github.com/SamtendoNetwork/mario-kart-8)
 
 # Cloning and building
 
 ```shell
-git clone --recursive https://www.github.com/EpicUsername12/nex_mario_kart_8.git
+git clone --recursive https://www.github.com/SamtendoNetwork/mario-kart-8-python.git
 ```
 
 You need:
@@ -70,3 +66,5 @@ never rehydrated on its own, so a fresh or flushed Redis leaves them empty.
 
 Set `PN_MK8_REBUILD_RANKINGS_ON_START=true` for one startup to rebuild them from
 MongoDB, then unset it. The rebuild is read-only on MongoDB and safe to re-run.
+
+Credits to Pretendo for original repo.
