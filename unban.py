@@ -7,4 +7,4 @@ load_dotenv()
 stub = pbg.AmkjServiceStub(grpc.insecure_channel("localhost:56751"))
 md = [("x-api-key", os.environ["PN_MK8_MARIO_KART_8_GRPC_API_KEY"])]
 
-stub.ClearBan(pb.ClearBanRequest(pid=sys.argv[1]), metadata=md)
+stub.ClearBan(pb.ClearBanRequest(pid=int(sys.argv[1])), metadata=md)
